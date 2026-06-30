@@ -1,0 +1,8 @@
+interface:
+  display_name: "律师案例转口播文案"
+  short_description: "原始案例材料 → 口播文案（支持分享/分析/吃瓜/观点型 + 爆款钩子系统 + 律师立场卡）"
+  brand_color: "#8B4513"
+  default_prompt: "使用 $skill-lawyer-case-to-script 将下面的案件材料转化为口播文案。我会基于案件类型自动推荐文案类型和人设风格。\n\n【案件材料】\n"
+
+policy:
+  allow_implicit_invocation: true

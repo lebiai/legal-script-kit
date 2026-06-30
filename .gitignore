@@ -1,0 +1,8 @@
+# 保护用户本地数据
+*.db
+user_profile.json
+personal_knowledge.json
+
+# 系统文件
+.DS_Store
+*.bak

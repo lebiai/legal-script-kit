@@ -8,7 +8,7 @@
   3. ✅ 律师立场 — 含 <lawyer_stance> 标签
   4. ✅ "我们"原则 — 使用"我们/我"而非"律师"自称
   5. ✅ 立场一致性 — 前后态度统一
-  6. ✅ 字数范围 — ≤400 字（超过建议拆集）
+  6. ✅ 字数范围 — ≥400 字
   7. ✅ 预估时长标注
   8. ✅ 元数据行完整性
   9. ✅ 钩子长度 ≤18 字
@@ -100,10 +100,10 @@ class ScriptValidator:
             script_part = self.text
         cn_chars = re.findall(r'[\u4e00-\u9fff]', script_part)
         count = len(cn_chars)
-        if count > 400:
-            self.add_warning(f"文案 {count} 字 > 400，建议拆集")
+        if count < 400:
+            self.add_warning(f"文案 {count} 字 < 400，建议补充内容")
         else:
-            self.add_pass(f"文案 {count} 字 (≤400 ✅)")
+            self.add_pass(f"文案 {count} 字 (≥400 ✅)")
 
     def check_07_duration(self):
         if "预估时长" in self.text:

@@ -4,11 +4,20 @@
 
 这个工具就是帮您解决这个问题的。
 
-## 一键安装
+## 安装
+
+### 在 Codex 中说一句话（推荐）
+
+打开 Codex，直接说：
+
+> "下载 legal-script-kit"
+
+Codex 会自动下载并注册。
+
+### 一条命令
 
 ```bash
-git clone git@github.com:lebiai/legal-script-kit.git
-cp -r legal-script-kit ~/.codex/skills/
+bash <(curl -s https://raw.githubusercontent.com/lebiai/legal-script-kit/main/install.sh)
 ```
 
 装完重启 Codex 即可使用。

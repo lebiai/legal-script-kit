@@ -1,0 +1,11 @@
+{
+  "name": "legal-script-kit",
+  "description": "律师口播文案创作工具 — 案例转短视频口播文案",
+  "plugins": [
+    {
+      "name": "legal-script-kit",
+      "description": "律师口播文案创作工具：5种文案类型 + 8种爆款钩子 + 3种人设风格",
+      "source": "./"
+    }
+  ]
+}
